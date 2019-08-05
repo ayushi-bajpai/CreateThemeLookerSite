@@ -3,36 +3,6 @@ body{
     padding: 0;
     font-family: sans-serif;
 }
-header nav ul li .dropdown{
-    display: inline-block;
-}
-  
-.dropdown-content {
-    line-height: 50px;
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    line-height: 20px;
-    color: whitesmoke;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-  
-.dropdown-content a:hover {
-    background-color: #bdb3b3;
-}
-  
-header nav ul li:hover .dropdown-content {
-    display: block;
-}
-
 header{
     position: absolute;
     top: 0;
@@ -82,6 +52,847 @@ header nav ul li a.active{
     cursor: pointer;
     display: none;
 }
+
+.dropdown{
+    display: inline-block;
+    margin-top: 60px;
+    background: black;
+}
+  
+.dropdown-content {
+    line-height: 50px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    line-height: 20px;
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #727070;
+}
+  
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.intro{
+    width: 100%;
+    height: 35  0px;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 180px;
+}   
+
+.line1{
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+    line-height: 1.2;
+    color: #777;
+    padding-bottom: 45px;
+}
+
+.line2{
+    font-size: 50px;
+    font-weight: lighter;
+    line-height: 1.4;
+    letter-spacing: 0.6em;
+    padding-bottom: 55px;
+}
+
+.but{
+    width: 150px;
+    height: 35px;    
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 150px;
+    transition: 0.3s;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.but:hover{
+    background-color: black;
+    color: white;
+}
+
+.block{
+    width: 100%;
+    height: 820px;
+}
+
+.block ul{
+    width: 100%;
+    line-height: 1.7;    
+    list-style: none;
+    letter-spacing: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block ul li{
+    width: 33%;
+}
+
+.block-images{
+    height: 400px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.block-images img{
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.block-images img:hover{
+    transform: scale(1.04);
+    filter: brightness(120%);
+}
+
+.createPro{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-weight: lighter;    
+    flex-direction: column;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.createProBut{
+    background-color: lightgray;
+    height: 38px;
+    width: 192px;
+    border-radius: 2px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.createProBut:hover{
+    background-color: white;
+    color: black;
+}
+
+.branding{
+    margin-top: 120px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.services h2{
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 19px;
+    font-weight: lighter;
+    margin-top: 150px;
+    text-align: center;
+    letter-spacing: 0.5em;
+} 
+
+.nextpic{
+    display: flex;
+    flex-direction: column;
+}
+
+.nextpic h4{
+    text-align: center;
+    font-family: 'Dosis', Arial, sans-serif;
+    color: rgb(139, 138, 138);
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.nextpic h4:hover{
+color: black;
+}
+
+.nextpic img{
+    margin: 70px;
+    margin-bottom: 25px;
+}
+
+.one-liners{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.Paragraph{
+    font-family: 'open-sans', sans-serif;
+    font-weight: lighter;
+    height: 170px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(119, 119, 119);
+    width: 332px;
+    padding: 10px;
+}
+
+.one-liners p{
+    padding: 10px;
+    margin-left: 17px;
+    margin-right: 17px;
+    height: 150px;
+    width: 340px;    
+    color: rgb(119, 119, 119);
+    letter-spacing: 0.1em;
+    font-family: 'open-sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.services h4{
+    margin: 0 auto;
+    width: 150px;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    font-family: 'Dosis', Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+}
+
+.services h4:hover{
+    color: black;
+}
+
+.PC{
+    margin-top: 155px;
+    width: 100;
+    height: 450px;
+    background-color:black;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.linea{
+    color: rgba(241, 241, 241, 0.9);
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    flex-direction: column;
+    width: 600px;
+}
+
+.linea h3{
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+}
+
+.linea p{
+    font-family: 'open-sans', Arial, sans-serif;
+    color: rgb(119, 119, 119);
+    margin: 30px 0;
+    font-weight: lighter;
+}
+
+.PCimg{
+    margin-left: 50px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.stats{
+    font-family: 'Dosis', Arial, sans-serif;
+    width: 100%;
+    height: 325px;
+    background-color: white;
+    padding-top: 150px;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.493);
+}
+
+.statsText{
+    margin: auto;
+    display: flex;
+    letter-spacing: 0.3em;
+    font-size: 17px;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.statsText h2{
+    font-weight: lighter;
+}
+
+.statsText a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    font-size: 12px;
+}
+
+.Random{
+    display: flex;
+    margin: auto;
+    height: 50px;
+    width: 60%;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.Random p{
+    padding: 15px;
+}
+
+.statsBar{
+    display: flex;
+    padding-top: 15px;
+    flex-direction: column;
+    height: 150px;
+}
+
+.statsGraph{
+    height: 2px;
+    width: 300px;
+    margin: 10px 0;
+    background-color: rgb(211, 211, 211);
+}
+
+.percent{
+    background-color: black;
+    height: 3px;
+}
+
+.statsBar h6{
+    color: black;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: -7px;
+}
+
+.workProcess{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    color: rgb(119, 119, 119);
+    border-bottom: 1px solid rgba(196, 194, 194, 0.493);
+    justify-content: center;
+    align-items: center;
+}
+
+.workProcess h4{
+    font-family: 'Dosis', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+
+.workProcess p{
+    font-family: 'open-sans', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    width: 275px;
+    margin-right: 50px;
+    margin-top: 25px;
+    height: 100px;
+}
+
+.chooseUs{
+    padding-top: 150px;
+    width: 100%;
+    font-family: 'Dosis', Arial, sans-serif;
+    color: rgb(119, 119, 119);
+    letter-spacing: 0.2em;
+    font-size: 16px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.review{
+    height: 475px;
+    width: 100;
+    background-color: #272727;
+    margin-top: 130px;
+    padding-left: 30%;
+}
+
+.Dquotes{
+    width: 60%;
+    height: 475px;
+    display: flex;
+    color: rgb(245, 245, 245);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Dquotes p{
+    width: 720px;
+    font-size: 17px;
+    line-height: 1.7;
+    font-family: 'open-sans', Arial, Helvetica, sans-serif;
+    margin: 25px 0;
+    font-weight: lighter;
+}
+
+.Dquotes h3{
+    color: rgb(119, 119, 119);
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    font-family: 'Dosis', Arial;
+}
+
+.Dquotes h4{
+    color: rgb(245, 245, 245);
+    letter-spacing: 0.3em;
+    font-size: 17px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-weight: lighter;
+}
+.Q1{
+    display: none;
+}
+
+.qualities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.subQual{
+   width: 350px;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.subQual h3{
+   margin-top: 11px;
+   color: black;
+   font-weight: lighter;
+   font-weight: 13px;
+   margin-bottom: 10px;
+}
+
+.subQual p{
+    text-align: center;
+    padding: 25px;
+    word-spacing: 0.2em;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.bestSell{
+    padding-top: 150px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop{
+    width: 60%;
+    height: 700px;
+    display: flex;
+    padding-top: 42px;
+}
+
+.items{
+    width: 25%;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.items img{
+    width: 100%;
+    height: 67%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.items img:hover{
+    filter: brightness(120%)
+}
+
+.items a{
+    margin-top: 25px;
+    text-decoration: none;
+    color: rgb(107, 106, 106);
+    letter-spacing: 0.16em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.items h4{
+    font-family: 'open-sans', sans-serif;
+    color: rgb(143, 142, 142);
+}
+
+.items button{
+    margin-top: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 30px;
+    width: 145px;
+}
+
+.items button:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.Sale{
+    position: absolute;
+    float: right;
+    height: 20px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: #E14139;
+    display: flex;
+    z-index: 120;
+    margin-top: -206px;
+    margin-left: 4.4%;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Dosis';
+    letter-spacing: 0.2em;
+    padding-left: 12px;
+}
+
+.temp{
+    border-top: 1px solid rgba(199, 197, 197, 0.342);
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempI img{
+    height: 362px;
+    width: 630px;
+}
+
+.tempAwesome{
+    width: 20%;
+    margin-left: 50px;
+    margin-top: -150px;
+}
+
+
+.tempAwesome p{
+    padding-right: 10px;
+    color: rgb(136, 135, 135);
+    font-size: 16px;
+    font-family: 'open-sans', Arial;
+}
+
+.temp button{
+    width: 146px;
+    height: 37px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 220px;
+    border: 2px solid black;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: absolute;
+}
+
+.temp button:hover{
+    background-color: black;
+    color: white;
+}
+.tempAwesome h2{
+    font-family: 'Dosis';
+    letter-spacing: 0.3em;
+    font-weight: lighter;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.parallaxBack{
+    margin-top: 170px;
+    height: 400px;
+    width: 100%;
+    background: url('../others/parallaxBack.jpg') repeat;
+}
+
+
+.latestNews{
+    padding-top: 150px;
+    width: 100%;
+    font-family: 'Dosis';
+}
+
+.imgLines{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 62%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#second{
+    margin: 0 2%;
+}
+
+.read h3{
+    margin-top: 15px;
+    font-weight: lighter;
+    color: rgb(138, 137, 137);
+    letter-spacing: 0.1em;
+    font-weight: 14px;
+}
+
+.read h5{
+    margin-top: 5px;
+    color: #777;
+    font-weight: 15px;
+    margin-bottom: 20px;
+}
+
+.read p{
+    font-family: 'open-sans', arial, sans-serif;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.read button{
+    width: 121px;
+    height: 26px;
+    border-radius: 3px;
+    color: #777;
+    transition: 0.2s;
+}
+
+.read button:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+.mail{
+    height: 255px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(238, 236, 236);
+    margin-top: 140px;
+    font-family: 'Dosis', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.mail h2{
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+
+.mail input{
+    margin-top: 25px;
+    height: 35px;
+    width: 300px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.mail h4{
+    font-weight: lighter;
+    font-size: 12px;
+    color: rgb(133, 132, 132);
+}
+
+.mail button{
+    width: 155px;
+    height: 35px;
+    border-radius: 2px;
+    outline: none;
+    font-family: 'open-sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.mail input:focus{
+outline: 1px solid black;
+}
+
+.findUs{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dosis', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.findUs h1{
+    margin-top: 160px;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 92px;
+}
+
+.contactUsHow{
+    display: flex;
+}
+
+.contactUsHow-meth{
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    color: #727070;
+}
+
+.ourProjects{
+    margin-top: 200px;
+    display: flex;
+    height: 222px;
+    background-color: black;
+    color: rgb(138, 137, 137);
+    font-family: 'Dosis', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ourProjects h2{
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 50px;
+}
+
+.ourProjects button{
+    height: 40px;
+    width: 166px;
+    color: Black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ourProjects button:hover{
+    background-color: white;
+}
+
+.footer{
+    padding-top: 50px;
+    height: 404px;
+    background-color: rgb(233, 231, 231);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer img{
+    height: 33px;
+    width: 85px;
+}
+
+.social-handles{
+    display: flex;
+    margin-top: 30px;
+}
+
+.social{
+    height: 33px;
+    width: 33px;
+    margin: 0 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    transform: rotate(45deg);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social:hover{
+    background-color: black;
+    color: white;
+}
+
+.footer a{
+    margin-top: 120px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(134, 133, 133);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer h5{
+    color: rgb(134, 134, 134);
+    font-family: 'Dosis', sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+
+.Buy{
+    position: fixed; 
+    bottom: 50px; 
+    right: 10px; 
+    z-index: 50; 
+    background-color: rgb(9, 102, 22); 
+    font-weight: bold; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 50%; 
+    font-size: 10px;
+    box-shadow: none;
+}
+
+.Buy:hover{
+    font-size: 15px;
+}
+
 @media(max-width: 1025px){
     header{
         padding: 0 20px;
